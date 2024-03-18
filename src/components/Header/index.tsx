@@ -39,15 +39,15 @@ const Header = ({ t }: { t: TFunction }) => {
         <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
           <Span>{t("Mission")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => window.location.href = "https://app.snacc.fit"}>
-          <Span>{t("Product")}</Span>
+        <CustomNavLinkSmall onClick={() => scrollTo("contact")}>
+          <Span>{t("Contact us")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
+          onClick={() => window.location.href = "https://app.snacc.fit"}
         >
           <Span>
-            <Button>{t("Contact")}</Button>
+            <Button>{t("Start now")}</Button>
           </Span>
         </CustomNavLinkSmall>
       </>
@@ -59,7 +59,8 @@ const Header = ({ t }: { t: TFunction }) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.svg" width="101px" height="64px" />
+            {/* <SvgIcon src="logo-icon.svg" width="101px" height="64px" /> */}
+            <SvgIcon src="logo-icon.svg" width="101px" height="64px" />
           </LogoContainer>
           <NotHidden>
             <MenuItem />

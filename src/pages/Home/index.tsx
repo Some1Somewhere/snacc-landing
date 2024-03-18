@@ -1,6 +1,5 @@
 import { lazy } from "react";
 import Content from "../../content.json";
-import { ButtonProps } from "../../common/types";
 import { ButtonTProps } from "../../components/ContentBlock/types";
 
 const Contact = lazy(() => import("../../components/ContactForm"));

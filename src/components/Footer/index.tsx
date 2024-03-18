@@ -3,7 +3,7 @@ import { withTranslation, TFunction } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
 
-import i18n from "i18next";
+// import i18n from "i18next";
 import {
   FooterSection,
   Title,
@@ -14,11 +14,8 @@ import {
   Large,
   Chat,
   Empty,
-  FooterContainer,
   Language,
-  Label,
-  LanguageSwitch,
-  LanguageSwitchContainer,
+  FooterContainer
 } from "./styles";
 
 interface SocialLinkProps {
@@ -27,9 +24,9 @@ interface SocialLinkProps {
 }
 
 const Footer = ({ t }: { t: TFunction }) => {
-  const handleChange = (language: string) => {
-    i18n.changeLanguage(language);
-  };
+  // const handleChange = (language: string) => {
+  //   i18n.changeLanguage(language);
+  // };
 
   const SocialLink = ({ href, src }: SocialLinkProps) => {
     return (
@@ -62,8 +59,8 @@ const Footer = ({ t }: { t: TFunction }) => {
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Policy")}</Title>
-              <Large to="/">{t("Support Center")}</Large>
-                            <Large to="/">{t("Customer Support")}</Large>
+              <Large to="/terms-and-conditions">{t("Terms of Service")}</Large>
+                            <Large to="/privacy-policy">{t("Privacy Policy")}</Large>
             </Col>
             {/* <Col lg={6} md={6} sm={12} xs={12}>
               <Empty />
@@ -126,20 +123,20 @@ const Footer = ({ t }: { t: TFunction }) => {
                 />
               </LogoContainer>
             </NavLink>
-            {/* <FooterContainer>
-              <SocialLink
+            <FooterContainer>
+              {/* <SocialLink
                 href="https://github.com/Adrinlol/create-react-app-adrinlol"
                 src="github.svg"
               />
               <SocialLink
                 href="https://twitter.com/Adrinlolx"
                 src="twitter.svg"
-              />
+              /> */}
               <SocialLink
-                href="https://www.linkedin.com/in/lasha-kakabadze/"
+                href="https://www.linkedin.com/in/dhruv-k-shetty/"
                 src="linkedin.svg"
               />
-              <SocialLink
+              {/* <SocialLink
                 href="https://medium.com/@lashakakabadze/"
                 src="medium.svg"
               />
@@ -154,8 +151,8 @@ const Footer = ({ t }: { t: TFunction }) => {
                   src="https://storage.ko-fi.com/cdn/kofi3.png?v=3"
                   alt="Buy Me a Coffee at ko-fi.com"
                 />
-              </a>
-            </FooterContainer> */}
+              </a> */}
+            </FooterContainer>
           </Row>
         </Container>
       </Extra>
