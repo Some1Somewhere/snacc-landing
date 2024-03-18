@@ -33,6 +33,11 @@ const ContentBlock = ({
     });
   };
 
+  const redirectPage = (url: string) => {
+    window.location.href = url;
+  };
+
+
   return (
     <ContentSection>
       <Fade direction={direction} triggerOnce>
@@ -51,26 +56,25 @@ const ContentBlock = ({
               <Content>{t(content)}</Content>
               {direction === "right" ? (
                 <ButtonWrapper>
-                  {typeof button === "object" &&
-                    button.map(
-                      (
-                        item: {
-                          color?: string;
-                          title: string;
-                        },
-                        id: number
-                      ) => {
-                        return (
-                          <Button
-                            key={id}
-                            color={item.color}
-                            onClick={() => scrollTo("about")}
-                          >
-                            {t(item.title)}
-                          </Button>
-                        );
+                  {button && button.map((item, id) => {
+                    const handleClick = () => {
+                      if (item.action === 'redirect') {
+                        redirectPage(item.target!); // For external redirects
+                      } else if (item.action === 'scroll') {
+                        scrollTo(item.target!); // Assuming scrollTo is a function to scroll to an internal section
                       }
-                    )}
+                    };
+                
+                    return (
+                      <Button
+                        key={id}
+                        color={item.color}
+                        onClick={handleClick}
+                      >
+                        {t ? t(item.title) : item.title}
+                      </Button>
+                    );
+                  })}
                 </ButtonWrapper>
               ) : (
                 <ServiceWrapper>

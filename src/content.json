@@ -1,0 +1,64 @@
+{
+    "IntroContent": {
+      "title": "Snacc it",
+      "text": "Elevate your health with Snacc. Capture a meal, get instant nutritional insights. For everyone committed to a healthier tomorrow.",
+      "button": [
+        {
+          "title": "Start Now",
+            "action": "redirect",
+            "target": "https://app.snacc.fit"
+        },
+        {
+          "title": "How It Works",
+          "color": "#fff",
+            "action": "scroll",
+            "target": "about"
+        }
+      ],
+      "image": "landing.png"
+    },
+    "MiddleBlockContent": {
+      "title": "Revolutionizing Nutrition Tracking",
+      "text": "Snacc redefines meal tracking: AI-powered analysis, user-friendly design. Perfect for individuals and professionals.",
+      "button": "Join Now"
+    },
+    "MissionContent": {
+      "title": "Personalized for Your Health Goals",
+      "text": "With Snacc, tailor your nutrition and fitness journey with ease. Achieve your goals with our custom insights."
+    },
+    "ProductContent": {
+      "title": "Simplicity Meets Innovation",
+      "text": "Snacc combines intuitive design with cutting-edge AI, making nutrition tracking and management seamless. Ideal for everyone from fitness enthusiasts tracking macros to healthcare professionals overseeing patient nutrition.",
+      "button": {
+        "title": "Explore Now",
+        "action": "redirect",
+        "target": "https://app.snacc.fit"
+      }
+    },
+    "ContactContent": {
+      "title": "Stay Connected",
+      "text": "Questions or feedback? Our streamlined contact form ensures your voice is heard. Let’s make nutrition tracking better, together."
+    },
+    "AboutContent": {
+      "title": "Transform Your Diet with Snacc",
+      "text": "Snacc: Your roadmap to a healthier life. Track, understand, and improve your nutrition seamlessly.",
+      "section": [
+        {
+          "title": "Track Effortlessly",
+          "content": "Snap a meal, and let AI log the details.",
+          "icon": "camera.svg"
+        },
+        {
+          "title": "Insights in a Flash",
+          "content": "Get instant, actionable nutrition breakdowns.",
+          "icon": "insights.svg"
+        },
+        {
+          "title": "Personalize Your Plan",
+          "content": "Craft your nutrition strategy with AI guidance.",
+          "icon": "plan.svg"
+        }
+      ]
+    }
+  }
+  
