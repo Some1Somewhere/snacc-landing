@@ -20,9 +20,11 @@ const RedirectToApp: React.FC = () => {
 
     if (isIOS) {
       // Redirect to Apple App Store or open the app if installed
+      history.replace('/');
       window.location.href = 'https://apps.apple.com/us/app/snacc-nutrition-guide/id6478940556';
     } else {
       // Redirect to a fallback page or do nothing
+      history.replace('/');
       window.location.href = 'https://app.snacc.fit';
     }
   }, [history]);
