@@ -5,7 +5,6 @@ const RedirectToApp: React.FC = () => {
   const history = useHistory();
 
   useEffect(() => {
-    const userAgent = navigator.userAgent
     
     // Detect if the user is on iOS
     const isIOS = [
