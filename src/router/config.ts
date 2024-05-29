@@ -13,6 +13,11 @@ const routes = [
     path: "/privacy-policy",
     exact: true,
     component: "PrivacyPolicy",
+  },
+  {
+    path: "/get",
+    exact: true,
+    component : "RedirectToApp",
   }
 
 ];
