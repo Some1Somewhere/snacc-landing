@@ -3,7 +3,7 @@ import { TFunction } from "react-i18next";
 export interface ButtonTProps {
   color?: string | undefined;
   title: string;
-  action?: 'redirect' | 'scroll';
+  action?: 'redirect' | 'scroll' | 'redirectToApp';
   target?: string;
 }
 

@@ -15,6 +15,7 @@ import {
   StyledRow,
   ButtonWrapper,
 } from "./styles";
+import { useHistory } from "react-router-dom";
 
 const ContentBlock = ({
   icon,
@@ -32,6 +33,8 @@ const ContentBlock = ({
       behavior: "smooth",
     });
   };
+
+  const history = useHistory();
 
   const redirectPage = (url: string) => {
     window.location.href = url;
@@ -58,7 +61,9 @@ const ContentBlock = ({
                 <ButtonWrapper>
                   {button && button.map((item, id) => {
                     const handleClick = () => {
-                      if (item.action === 'redirect') {
+                      if (item.action === 'redirectToApp') {
+                        history.push("/get") // Assuming scrollTo is a function to scroll to an internal section
+                      } else if (item.action === 'redirect') {
                         redirectPage(item.target!); // For external redirects
                       } else if (item.action === 'scroll') {
                         scrollTo(item.target!); // Assuming scrollTo is a function to scroll to an internal section

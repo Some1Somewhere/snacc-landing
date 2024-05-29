@@ -15,8 +15,10 @@ import {
   Outline,
   Span,
 } from "./styles";
+import { useHistory } from "react-router-dom";
 
 const Header = ({ t }: { t: TFunction }) => {
+  const history = useHistory();
   const [visible, setVisibility] = useState(false);
 
   const toggleButton = () => {
@@ -44,10 +46,10 @@ const Header = ({ t }: { t: TFunction }) => {
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
-          onClick={() => window.location.href = "https://app.snacc.fit"}
+          onClick={() => history.push("/get")}
         >
           <Span>
-            <Button>{t("Start now")}</Button>
+            <Button>{t("Try it now!")}</Button>
           </Span>
         </CustomNavLinkSmall>
       </>

@@ -5,8 +5,7 @@
       "button": [
         {
           "title": "Start Now",
-            "action": "redirect",
-            "target": "https://app.snacc.fit"
+            "action": "redirectToApp"
         },
         {
           "title": "How It Works",
@@ -20,7 +19,7 @@
     "MiddleBlockContent": {
       "title": "Revolutionizing Nutrition Tracking",
       "text": "Snacc redefines meal tracking: AI-powered analysis, user-friendly design. Perfect for individuals and professionals.",
-      "button": "Join Now"
+      "button": "Connect with us"
     },
     "MissionContent": {
       "title": "Personalized for your Health Goals",
@@ -30,9 +29,8 @@
       "title": "Simplicity Meets Innovation",
       "text": "Snacc combines intuitive design with cutting-edge AI, making nutrition tracking and management seamless. Ideal for everyone from fitness enthusiasts tracking macros to healthcare professionals overseeing patient nutrition.",
       "button": {
-        "title": "Explore Now",
-        "action": "redirect",
-        "target": "https://app.snacc.fit"
+        "title": "Try it Now",
+        "action": "redirectToApp"
       }
     },
     "ContactContent": {
