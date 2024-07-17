@@ -18,6 +18,17 @@ const routes = [
     path: "/get",
     exact: true,
     component : "RedirectToApp",
+  },
+  {
+    path: "/test",
+    exact: true,
+    component : "RedirectToTestingApp",
+  },
+
+  {
+    path: "/delete-account",
+    exact: true,
+    component : "DeleteAccount",
   }
 
 ];
