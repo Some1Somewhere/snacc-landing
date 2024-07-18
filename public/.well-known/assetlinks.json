@@ -1,0 +1,32 @@
+[
+    {
+      "relation": [
+        "delegate_permission/common.handle_all_urls"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.pyramid.moodfood",
+        "sha256_cert_fingerprints": [
+          "B4:99:4B:86:C2:B4:2A:B2:26:02:C7:2B:13:7A:61:72:1C:D9:E2:12:F4:48:99:60:13:55:AF:72:1A:4D:46:09",
+          "2B:61:94:D0:04:F1:AC:42:07:63:1C:93:90:DD:0A:3A:B3:8A:A2:03:AC:14:34:66:F1:0C:1C:86:FC:7A:13:6A",
+          "71:4E:CA:5C:E4:FD:00:24:2C:F8:39:91:CE:0F:C8:17:01:49:2C:A3:D1:C5:82:87:E4:C7:18:4B:04:A6:D0:4C",
+          "A2:B9:9C:7C:D2:2B:35:F3:05:A8:9C:32:A6:76:09:6C:A0:46:87:12:E6:72:F9:9B:3F:0C:7B:C5:F9:31:A5:FE",
+          "0A:29:56:39:C2:62:D8:39:53:27:B2:8D:09:34:57:77:DE:42:2A:65:57:FD:82:F6:CD:33:1B:8A:66:EF:16:36",
+          "FD:E3:4F:EC:45:E8:E6:BC:DB:49:68:C4:5B:EB:CF:8E:EA:45:DD:8B:61:5E:15:50:74:B4:CC:21:13:81:EF:19",
+          "B1:51:07:CD:DE:B3:83:92:37:CC:69:26:29:F6:48:2F:ED:90:D6:BC:7B:91:E6:54:0F:D9:DE:85:73:05:9D:82"
+        ]
+      }
+    },
+    {
+      "relation": [
+        "delegate_permission/common.handle_all_urls"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.pyramid.snacc",
+        "sha256_cert_fingerprints": [
+          "B1:51:07:CD:DE:B3:83:92:37:CC:69:26:29:F6:48:2F:ED:90:D6:BC:7B:91:E6:54:0F:D9:DE:85:73:05:9D:82"
+        ]
+      }
+    }
+  ]
