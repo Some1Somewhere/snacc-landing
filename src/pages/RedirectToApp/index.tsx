@@ -18,10 +18,18 @@ const RedirectToApp: React.FC = () => {
       // iPad on iOS 13 detection
       || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
 
+
+      const isAndroid = /android/.test(navigator.userAgent.toLowerCase());
+
+
     if (isIOS) {
       // Redirect to Apple App Store or open the app if installed
       history.replace('/');
       window.location.href = 'https://apps.apple.com/us/app/snacc-nutrition-guide/id6478940556';
+    } else if (isAndroid) {
+      // Redirect to Google Play Store
+      history.replace('/');
+      window.location.href = 'https://play.google.com/store/apps/details?id=com.pyramid.snacc';
     } else {
       // Redirect to a fallback page or do nothing
       history.replace('/');

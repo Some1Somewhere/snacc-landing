@@ -18,10 +18,16 @@ const RedirectToApp: React.FC = () => {
       // iPad on iOS 13 detection
       || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
 
-    if (isIOS) {
+      const isAndroid = /android/.test(navigator.userAgent.toLowerCase());
+    
+      if (isIOS) {
       // Redirect to Apple App Store or open the app if installed
       history.replace('/');
       window.location.href = 'https://testflight.apple.com/join/Xw09I53z';
+    } else if (isAndroid) {
+      // Redirect to Google Play Store
+      history.replace('/');
+      window.location.href = 'https://play.google.com/apps/testing/com.pyramid.snacc';
     } else {
       // Redirect to a fallback page or do nothing
       history.replace('/');
