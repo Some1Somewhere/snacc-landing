@@ -1,6 +1,7 @@
 import { lazy } from "react";
 import Content from "../../content.json";
 import { ButtonTProps } from "../../components/ContentBlock/types";
+import YouTubeEmbed from "../../components/YouTubeEmbed";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -33,6 +34,7 @@ const Home = () => {
         icon="graphs.svg"
         id="about"
       />
+      <YouTubeEmbed videoId="URIKKpJwhqY" />
       <ContentBlock
         direction="right"
         title={Content.MissionContent.title}

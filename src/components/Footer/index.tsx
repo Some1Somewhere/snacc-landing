@@ -53,7 +53,7 @@ const Footer = ({ t }: { t: TFunction }) => {
               <Para>
                 {t(`Do you have any question? Feel free to reach out.`)}
               </Para>
-              <a href="mailto:moodfood313@gmail.com">
+              <a href="mailto:ashu@snacc.fit">
                 <Chat>{t(`Let's Chat`)}</Chat>
               </a>
             </Col>
@@ -127,13 +127,13 @@ const Footer = ({ t }: { t: TFunction }) => {
               {/* <SocialLink
                 href="https://github.com/Adrinlol/create-react-app-adrinlol"
                 src="github.svg"
-              />
-              <SocialLink
-                href="https://twitter.com/Adrinlolx"
-                src="twitter.svg"
               /> */}
               <SocialLink
-                href="https://www.linkedin.com/in/dhruv-k-shetty/"
+                href="https://x.com/gowda_ashuthosh"
+                src="twitter.svg"
+              />
+              <SocialLink
+                href="https://www.linkedin.com/in/ashuthoshgowda"
                 src="linkedin.svg"
               />
               {/* <SocialLink
